@@ -193,16 +193,3 @@ footer {
   font-family: Tahoma, sans-serif;
   font-size: 14px;
 }
-
-footer p {
-  color: #f0f0f0 !important;   
-}
-
-footer a {
-  color: #FFD700;              
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
