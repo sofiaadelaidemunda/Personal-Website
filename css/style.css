@@ -186,7 +186,7 @@ p {
 }
 
 footer {
-  background-color: #002147;   
+  background-color: #002147;  
   color: #f0f0f0;              
   text-align: center;
   padding: 20px;
@@ -194,8 +194,12 @@ footer {
   font-size: 14px;
 }
 
+footer p {
+  color: #f0f0f0;              
+}
+
 footer a {
-  color: #FFD700;             
+  color: #FFD700;              
   text-decoration: none;
 }
 
