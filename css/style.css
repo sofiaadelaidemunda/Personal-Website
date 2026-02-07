@@ -1,4 +1,3 @@
-/* General Body */
 body {
   background-color: #f4f9f9;
   margin: 0;
@@ -6,7 +5,6 @@ body {
   font-family: Tahoma, sans-serif;
 }
 
-/* Navbar with logo */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -35,7 +33,6 @@ body {
   font-size: 16px;
 }
 
-/* Hero Section */
 .hero {
   background-color: #002147;
   color: #FFD700;
@@ -71,7 +68,6 @@ body {
   display: inline-block;
 }
 
-/* Section Headings */
 h2 {
   color: #002147;
   font-family: Georgia, serif;
@@ -84,7 +80,6 @@ h2 {
   border-radius: 4px;
 }
 
-/* Paragraphs */
 p {
   color: black;
   font-family: Tahoma, sans-serif;
@@ -95,7 +90,6 @@ p {
   padding: 0 50px;
 }
 
-/* Stories Section */
 .featured {
   background-color: #f4f9f9;
   padding: 40px 20px;
@@ -146,7 +140,6 @@ p {
   color: #FFD700;
 }
 
-/* About Section */
 .about {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
   padding: 50px 40px;
@@ -162,7 +155,6 @@ p {
   padding: 0;
 }
 
-/* Contact Section */
 .contact {
   background-color: #002147;
   color: #FFD700;
@@ -193,9 +185,8 @@ p {
   font-weight: bold;
 }
 
-/* Footer */
 footer {
-  background-color: #002147;
+  background-color: #f0f1f2;
   color: #FFD700;
   text-align: center;
   padding: 20px;
