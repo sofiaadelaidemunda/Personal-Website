@@ -1,0 +1,90 @@
+header {
+    background-color: #002147; 
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+h1 {
+    color: #FFD700;        
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #f0f0f0;          
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;    
+}
+
+h2 {
+  color: #002147;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  margin: 40px 0 15px 50px;
+  padding: 8px 15px;
+  border-left: 6px solid #FFD700;  
+  background: linear-gradient(90deg, #fff8dc 0%, transparent 100%); 
+  display: inline-block;
+  border-radius: 4px;  
+}
+
+
+p {
+    color: black;
+    font-family: Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.6;
+    text-indent: 2em;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body {
+    background-color: #f4f9f9;
+    margin: 0;
+    padding: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+.parts-nav {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Tahoma, sans-serif;
+}
+
+.parts-nav .part {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 16px;
+  color: #FFD700;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.parts-nav .active {
+  background-color: #FFD700;
+  color: #002147;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 6px 12 px;
+}
