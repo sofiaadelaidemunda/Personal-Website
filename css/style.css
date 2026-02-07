@@ -186,9 +186,19 @@ p {
 }
 
 footer {
-  background-color: #f0f1f2;
-  color: #FFD700;
+  background-color: #002147;   
+  color: #f0f0f0;              
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  color: #FFD700;             
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
