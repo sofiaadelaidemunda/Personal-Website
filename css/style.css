@@ -195,7 +195,7 @@ footer {
 }
 
 footer p {
-  color: #f0f0f0;              
+  color: #f0f0f0 !important;   
 }
 
 footer a {
