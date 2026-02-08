@@ -219,3 +219,26 @@ footer {
   margin-right: 8px;
   color: #002147;
 }
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* ensures it stacks on smaller screens */
+}
+
+.about-img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  color: #002147;
+  font-size: 18px;
+  line-height: 1.8;
+}
