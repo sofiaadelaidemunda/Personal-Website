@@ -88,3 +88,11 @@ body {
   border-radius: 4px;
   padding: 6px 12px;
 }
+
+.story-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
