@@ -199,3 +199,8 @@ footer {
   padding: 0;           
   text-align: center;   
 }
+
+.contact-info i {
+  margin-right: 8px;
+  color: #002147;   
+}
