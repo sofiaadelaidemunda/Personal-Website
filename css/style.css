@@ -204,3 +204,18 @@ footer {
   margin-right: 8px;
   color: #002147;   
 }
+
+.contact-info a {
+  color: #002147;      
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #002147;
+}
