@@ -28,10 +28,9 @@ h2 {
   font-size: 24px;
   margin: 40px 0 15px 50px;
   padding: 8px 15px;
-  border-left: 6px solid #FFD700;  
-  background: linear-gradient(90deg, #fff8dc 0%, transparent 100%); 
+  background-color: #FFD700;   
+  border-radius: 4px;
   display: inline-block;
-  border-radius: 4px;  
 }
 
 
