@@ -23,13 +23,15 @@ h3 {
 }
 
 h2 {
-    color: black;          
-    font-family: Georgia, serif;
-    font-size: 22px;       
-    margin-top: 40px;       
-    margin-left: 50px;        
-    margin-bottom: 15px;
-    text-align: left;
+  color: #002147;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  margin: 40px 0 15px 50px;
+  padding: 8px 15px;
+  border-left: 6px solid #FFD700;  
+  background: linear-gradient(90deg, #fff8dc 0%, transparent 100%); 
+  display: inline-block;
+  border-radius: 4px;  
 }
 
 p {
@@ -46,4 +48,12 @@ body {
     background-color: #f4f9f9;
     margin: 0;
     padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
