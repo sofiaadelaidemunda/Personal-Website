@@ -28,31 +28,24 @@ h2 {
   font-size: 24px;
   margin: 40px 0 15px 50px;
   padding: 8px 15px;
-  background-color: #FFD700;   
-  border-radius: 4px;
+  border-left: 6px solid #FFD700;  
+  background: linear-gradient(90deg, #fff8dc 0%, transparent 100%); 
   display: inline-block;
+  border-radius: 4px;  
 }
-
 
 p {
     color: black;
     font-family: Tahoma, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     text-align: justify;
     line-height: 1.6;
     text-indent: 2em;
     margin-bottom: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 body {
     background-color: #f4f9f9;
     margin: 0;
     padding: 0;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
