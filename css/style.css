@@ -194,6 +194,8 @@ footer {
   font-size: 14px;
 }
 
-footer p:first-child {
-  color: #f0f0f0 !important;
+footer p {
+  color: #f0f0f0 !important;   
+  padding: 0;                  
+  text-align: center;          
 }
