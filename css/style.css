@@ -193,3 +193,7 @@ footer {
   font-family: Tahoma, sans-serif;
   font-size: 14px;
 }
+
+footer p:first-child {
+  color: #f0f0f0 !important;
+}
