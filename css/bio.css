@@ -108,3 +108,12 @@ p {
 .parts-nav a:hover {
   color: #FFD700;          /* gold on hover */
 }
+
+.logo {
+  color: #FFD700;          /* gold text */
+  font-size: 22px;         /* adjust size */
+  font-weight: bold;
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+  text-align: center;      /* center it */
+}
