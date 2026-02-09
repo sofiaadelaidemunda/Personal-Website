@@ -73,16 +73,22 @@ body {
 .bio-images {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;       /* allows stacking on smaller screens */
+  flex-wrap: wrap;       /* stacks neatly on smaller screens */
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .story-img {
-  width: 180px;          /* smaller size so text is the focus */
+  width: 200px;          /* keeps images small and neat */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+.bio-section p {
+  text-align: justify;
+  text-indent: 40px;     /* replaces &nbsp; indentation */
+  line-height: 1.6;
 }
 
 .go-top {
