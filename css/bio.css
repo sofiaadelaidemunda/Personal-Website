@@ -94,17 +94,17 @@ p {
 }
 
 .parts-nav {
-  text-align: center;      /* centers the links */
+  text-align: center;      
   margin-bottom: 15px;
 }
 
 .parts-nav a {
-  color: #f0f0f0;          /* white links */
-  text-decoration: none;   /* remove underline */
+  color: #f0f0f0;          
+  text-decoration: none;   
   font-weight: bold;
   padding: 0 8px;
 }
 
 .parts-nav a:hover {
-  color: #FFD700;          /* gold on hover */
+  color: #FFD700;          
 }
