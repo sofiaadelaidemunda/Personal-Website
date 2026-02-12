@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth; /* smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 /* Navbar */
 .navbar {
-  position: fixed;             /* stays at the top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -19,14 +19,14 @@ body {
   justify-content: space-between; /* logo left, links right */
   align-items: center;
   padding: 20px 40px;
-  background-color: #002147;   /* deep blue background */
-  z-index: 1000;               /* stays above other content */
+  background-color: #002147;   /* deep blue */
+  z-index: 1000;
 }
 
-/* Logo styling */
+/* Logo */
 .logo {
   font-family: Georgia, serif;
-  font-size: 36px;             /* bigger logo */
+  font-size: 36px;
   color: #FFD700;              /* gold */
   font-weight: bold;
 }
@@ -34,10 +34,14 @@ body {
 .logo i {
   color: #FFD700;
   margin-right: 10px;
-  font-size: 36px;             /* bigger flame icon */
+  font-size: 36px;
 }
 
 /* Navigation links */
+.nav-links {
+  display: flex;
+}
+
 .nav-links a {
   color: #FFD700;              /* gold links */
   text-decoration: none;
@@ -55,7 +59,7 @@ body {
   background-color: #002147;
   color: #FFD700;
   text-align: center;
-  height: 100vh;               /* full screen */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +67,7 @@ body {
 }
 
 .hero-content {
-  margin-top: 120px;           /* pushes content below fixed navbar */
+  margin-top: 120px;           /* push below fixed navbar */
 }
 
 .hero h1 {
@@ -87,14 +91,14 @@ body {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
   padding: 50px 40px;
   display: flex;
-  align-items: flex-start;     /* align items at the top */
+  align-items: flex-start;
   gap: 30px;
-  flex-wrap: wrap;             /* allow wrapping on smaller screens */
+  flex-wrap: wrap;
   min-height: 100vh;
 }
 
 .about-img {
-  width: 150px;                /* fixed size like original */
+  width: 150px;                /* fixed size */
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
@@ -102,7 +106,7 @@ body {
 }
 
 .about-text {
-  flex: 1;                     /* text takes remaining space */
+  flex: 1;
 }
 
 .about p {
@@ -154,8 +158,8 @@ body {
 
 /* Footer */
 footer {
-  background-color: #002147;  
-  color: #f0f0f0;             
+  background-color: #002147;
+  color: #f0f0f0;
   text-align: center;
   padding: 20px;
   font-family: Tahoma, sans-serif;
@@ -163,9 +167,9 @@ footer {
 }
 
 .footer-text {
-  color: #f0f0f0;       
-  padding: 0;           
-  text-align: center;   
+  color: #f0f0f0;
+  padding: 0;
+  text-align: center;
 }
 
 /* Back to Top Button */
