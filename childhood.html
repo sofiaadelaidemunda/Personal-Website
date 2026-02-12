@@ -28,64 +28,50 @@
 <section class="photo-collection">
   <div class="gallery-grid">
     <figure>
-      <a href="images/childhoodphoto1.jpg" onclick="openModal('images/childhoodphoto1.jpg','Recognition Day'); return false;">
+      <a href="#" onclick="openModal('images/childhoodphoto1.jpg','Recognition Day'); return false;">
         <img src="images/childhoodphoto1.jpg" alt="Recognition Day">
       </a>
       <figcaption>Smiling and getting ready for recognition day in elementary</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto2.jpg" onclick="openModal('images/childhoodphoto2.jpg','Zoo Field Trip'); return false;">
+      <a href="#" onclick="openModal('images/childhoodphoto2.jpg','Zoo Field Trip'); return false;">
         <img src="images/childhoodphoto2.jpg" alt="Zoo Field Trip">
       </a>
       <figcaption>Field trip at a zoo</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto3.jpg" onclick="openModal('images/childhoodphoto3.jpg','Birthday Celebration'); return false;">
+      <a href="#" onclick="openModal('images/childhoodphoto3.jpg','Birthday Celebration'); return false;">
         <img src="images/childhoodphoto3.jpg" alt="Birthday Celebration">
       </a>
       <figcaption>Birthday celebration at Jollibee</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto4.jpg" onclick="openModal('images/childhoodphoto4.jpg','Halloween Trick or Treat'); return false;">
+      <a href="#" onclick="openModal('images/childhoodphoto4.jpg','Halloween Trick or Treat'); return false;">
         <img src="images/childhoodphoto4.jpg" alt="Halloween Trick or Treat">
       </a>
       <figcaption>Halloween Trick or Treat in the neighbourhood</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto5.jpg" onclick="openModal('images/childhoodphoto5.jpg','Museum Field Trip'); return false;">
+      <a href="#" onclick="openModal('images/childhoodphoto5.jpg','Museum Field Trip'); return false;">
         <img src="images/childhoodphoto5.jpg" alt="Museum Field Trip">
       </a>
       <figcaption>Field trip at a museum with 3D art illusion</figcaption>
     </figure>
     <figure>
-      <a href="images/childhood2.jpg" onclick="openModal('images/childhood2.jpg','Little Sofia'); return false;">
+      <a href="#" onclick="openModal('images/childhood2.jpg','Little Sofia'); return false;">
         <img src="images/childhood2.jpg" alt="Little Sofia">
       </a>
-      <figcaption>Another special childhood memory</figcaption>
+      <figcaption>Little Sofia</figcaption>
     </figure>
   </div>
-
-  <!-- Navigation buttons -->
-  <div class="collection-nav">
-    <a href="index.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Back to Landing Page</a>
-    <a href="family.html" class="nav-btn next">Next Collection <i class="fas fa-arrow-right"></i></a>
-  </div>
 </section>
-
-<footer>
-  <p class="footer-text">© 2026 Sofia Adelaide Munda. All Rights Reserved.</p>
-</footer>
-
-<a href="#top" class="back-to-top">
-  <i class="fas fa-heart"></i>
-  <span>Go to Top</span>
-</a>
 
 <!-- Modal -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">×</span>
   <img id="modalImg" class="modal-content">
   <div id="caption"></div>
+  <button class="back-btn" onclick="closeModal()">← Back to Gallery</button>
 </div>
 
 <script>

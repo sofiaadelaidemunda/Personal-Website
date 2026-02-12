@@ -537,6 +537,7 @@ footer {
   transition: transform 0.3s ease;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .photo-collection img:hover {
@@ -564,7 +565,8 @@ footer {
 .modal-content {
   margin: auto;
   display: block;
-  max-width: 80%;
+  max-width: 90%;
+  max-height: 80vh; /* ensures full view without overflow */
   border-radius: 8px;
 }
 
@@ -582,4 +584,21 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 18px;
+}
+
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  background: #FFD700;
+  color: #002147;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.back-btn:hover {
+  background: #002147;
+  color: #FFD700;
 }
