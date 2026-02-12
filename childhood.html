@@ -55,7 +55,7 @@
     <figure>
       <img src="images/childhood2.jpg" alt="Little Sofia"
            onclick="openModal('images/childhood2.jpg','Little Sofia')">
-      <figcaption>ALittle Sofia</figcaption>
+      <figcaption>Little Sofia</figcaption>
     </figure>
   </div>
 </section>
@@ -73,7 +73,6 @@
 <div id="imageModal" class="modal">
   <img id="modalImg" class="modal-content">
   <div id="caption"></div>
-  <!-- Back button now calls closeModal() instead of linking -->
   <button class="back-btn" onclick="closeModal()">← Back to Gallery</button>
 </div>
 
@@ -88,6 +87,13 @@ function openModal(src, caption) {
 function closeModal() {
   document.getElementById("imageModal").style.display = "none"; // hide overlay
 }
+
+// Optional: allow ESC key to close modal
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
 </script>
 
 </body>

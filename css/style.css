@@ -512,7 +512,7 @@ footer {
 }
 
 /*photo gallery collection */
-/* Gallery grid */
+/* Photo Collection Grid */
 .photo-collection .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -550,21 +550,28 @@ footer {
 
 /* Modal overlay */
 .modal {
-  display: none;
+  display: none;               /* hidden by default */
   position: fixed;
-  z-index: 1000;
+  z-index: 2000;               /* sits above page */
   left: 0; top: 0;
   width: 100%; height: 100%;
   background-color: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+  flex-direction: column;      /* stack image, caption, button */
 }
 
 .modal-content {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 80vh;   /* keeps image full view */
   border-radius: 8px;
+}
+
+#caption {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
 }
 
 .back-btn {
