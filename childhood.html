@@ -6,9 +6,6 @@
   <title>Fiya's Childhood Memories</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body id="top">
 
@@ -31,40 +28,34 @@
 <section class="photo-collection">
   <div class="gallery-grid">
     <figure>
-      <a href="images/childhoodphoto1.jpg" data-lightbox="childhood" data-title="Recognition Day">
-        <img src="images/childhoodphoto1.jpg" alt="Recognition Day">
-      </a>
+      <img src="images/childhood1.jpg" alt="Recognition Day"
+           onclick="openModal('images/childhood1.jpg','Recognition Day')">
       <figcaption>Smiling and getting ready for recognition day in elementary</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto2.jpg" data-lightbox="childhood" data-title="Zoo Field Trip">
-        <img src="images/childhoodphoto2.jpg" alt="Zoo Field Trip">
-      </a>
+      <img src="images/childhood2.jpg" alt="Zoo Field Trip"
+           onclick="openModal('images/childhood2.jpg','Zoo Field Trip')">
       <figcaption>Field trip at a zoo</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto3.jpg" data-lightbox="childhood" data-title="Birthday Celebration">
-        <img src="images/childhoodphoto3.jpg" alt="Birthday Celebration">
-      </a>
+      <img src="images/childhood3.jpg" alt="Birthday Celebration"
+           onclick="openModal('images/childhood3.jpg','Birthday Celebration')">
       <figcaption>Birthday celebration at Jollibee</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto4.jpg" data-lightbox="childhood" data-title="Halloween Trick or Treat">
-        <img src="images/childhoodphoto4.jpg" alt="Halloween Trick or Treat">
-      </a>
+      <img src="images/childhood4.jpg" alt="Halloween Trick or Treat"
+           onclick="openModal('images/childhood4.jpg','Halloween Trick or Treat')">
       <figcaption>Halloween Trick or Treat in the neighbourhood</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto5.jpg" data-lightbox="childhood" data-title="Museum Field Trip">
-        <img src="images/childhoodphoto5.jpg" alt="Museum Field Trip">
-      </a>
+      <img src="images/childhood5.jpg" alt="Museum Field Trip"
+           onclick="openModal('images/childhood5.jpg','Museum Field Trip')">
       <figcaption>Field trip at a museum with 3D art illusion</figcaption>
     </figure>
     <figure>
-      <a href="images/childhood2.jpg" data-lightbox="childhood" data-title="Little Sofia">
-        <img src="images/childhood2.jpg" alt="Little Sofia">
-      </a>
-      <figcaption>Little Sofia</figcaption>
+      <img src="images/childhood6.jpg" alt="Extra Childhood Memory"
+           onclick="openModal('images/childhood6.jpg','Extra Childhood Memory')">
+      <figcaption>Another special childhood memory</figcaption>
     </figure>
   </div>
 
@@ -84,8 +75,25 @@
   <span>Go to Top</span>
 </a>
 
-<!-- Lightbox2 JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modalImg" class="modal-content">
+  <div id="caption"></div>
+  <a href="childhood.html" class="back-btn">← Back to Gallery</a>
+</div>
+
+<script>
+function openModal(src, caption) {
+  document.getElementById("imageModal").style.display = "block";
+  document.getElementById("modalImg").src = src;
+  document.getElementById("caption").innerHTML = caption;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
