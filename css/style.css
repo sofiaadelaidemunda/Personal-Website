@@ -222,7 +222,7 @@ body {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
   color: #002147;
   padding: 60px 20px;
-  flex: 1; /* allow section to grow */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,14 +243,61 @@ body {
   margin-bottom: 20px;
 }
 
-/* Footer (fixed at bottom, full width) */
+/* Individual contact card */
+.contact-card {
+  background-color: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card i {
+  display: block;
+  color: #FFD700;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.contact-card strong {
+  display: block;
+  font-size: 18px;
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.contact-card a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  color: #002147;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+/* Footer (anchored at bottom, full width) */
 footer {
   background-color: #002147;
   color: #f0f0f0;
   text-align: center;
   padding: 20px;
   width: 100%;
-  margin-top: auto; /* pushes footer to bottom */
+  margin-top: auto; /* ensures footer sits at bottom */
 }
 
 .footer-text {
@@ -314,5 +361,9 @@ footer {
   .card {
     width: 90%;
     max-width: 400px;
+  }
+
+  .contact-card {
+    width: 90%;
   }
 }
