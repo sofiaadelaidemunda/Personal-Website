@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* smooth scrolling */
 }
 
 body {
@@ -9,74 +9,93 @@ body {
   font-family: Tahoma, sans-serif;
 }
 
-/* Hero */
+/* Navbar */
+.navbar {
+  position: fixed;             /* stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #002147;   /* deep blue background */
+  z-index: 1000;               /* stays above other content */
+}
+
+/* Logo styling */
+.logo {
+  font-family: Georgia, serif;
+  font-size: 36px;             /* bigger logo */
+  color: #FFD700;              /* gold */
+  font-weight: bold;
+}
+
+.logo i {
+  color: #FFD700;
+  margin-right: 10px;
+  font-size: 36px;             /* bigger flame icon */
+}
+
+/* Navigation links */
+.nav-links a {
+  color: #FFD700;              /* gold links */
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #f0f0f0;              /* white on hover */
+}
+
+/* Hero Section */
 .hero {
   background-color: #002147;
   color: #FFD700;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
-  height: 100vh;
+  height: 100vh;               /* full screen */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/* Logo */
-.logo {
-  font-family: Georgia, serif;
-  font-size: 26px;
-  color: #FFD700;
-  font-weight: bold;
+.hero-content {
+  margin-top: 120px;           /* pushes content below fixed navbar */
 }
 
-.logo i {
-  color: #FFD700;
-  margin-right: 8px;
-}
-
-/* Inline Navigation */
-.parts-nav {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.parts-nav a {
-  color: #FFD700;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0 8px;
-  font-size: 16px;
-}
-
-.parts-nav a:hover {
-  color: #f0f0f0;
-}
-
-/* Hero Content */
 .hero h1 {
   color: #FFD700;
   font-family: Georgia, serif;
-  font-size: 36px;
-  margin: 20px 0 0 0;
+  font-size: 42px;
+  margin: 0;
   letter-spacing: 2px;
 }
 
 .hero h3 {
   color: #f0f0f0;
   font-family: Tahoma, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 12px;
   font-style: italic;
 }
 
-/* About */
+/* About Section */
 .about {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
   padding: 50px 40px;
   display: flex;
   align-items: center;
   gap: 30px;
+  min-height: 100vh;
+}
+
+.about p {
+  color: #002147;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .bio-btn {
@@ -95,29 +114,48 @@ body {
   color: #FFD700;
 }
 
-/* Stories */
+/* Stories Section */
 .featured {
   background-color: #f4f9f9;
   padding: 60px 20px;
+  min-height: 100vh;
 }
 
-/* Gallery */
+/* Gallery Section */
 .gallery {
   background-color: #002147;
   color: #FFD700;
   padding: 60px 20px;
   text-align: center;
+  min-height: 100vh;
 }
 
-/* Contact */
+/* Contact Section */
 .contact {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
   color: #002147;
   padding: 60px 20px;
   text-align: center;
+  min-height: 100vh;
 }
 
-/* Back to Top */
+/* Footer */
+footer {
+  background-color: #002147;  
+  color: #f0f0f0;             
+  text-align: center;
+  padding: 20px;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.footer-text {
+  color: #f0f0f0;       
+  padding: 0;           
+  text-align: center;   
+}
+
+/* Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 20px;
