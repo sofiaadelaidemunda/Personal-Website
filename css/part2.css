@@ -169,3 +169,31 @@ footer .back-link:hover {
   background-color: #FFD700;
   color: #002147;
 }
+
+/* Navigation between biography parts */
+.part-nav {
+  display: flex;
+  justify-content: space-between; /* prev left, next right */
+  margin: 30px 50px;
+}
+
+/* Buttons */
+.part-nav a {
+  background-color: #FFD700;   /* gold background */
+  color: #002147;              /* deep blue text */
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;          /* rounded box */
+  border: 2px solid #FFD700;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+/* Hover effect */
+.part-nav a:hover {
+  background-color: #002147;
+  color: #FFD700;
+  transform: scale(1.05);      /* slight zoom on hover */
+}
