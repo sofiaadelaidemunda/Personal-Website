@@ -488,11 +488,18 @@ footer {
 
 .collection-nav {
   display: flex;
-  justify-content: flex-end; /* aligns the button to the right */
-  margin-top: 30px;
+  justify-content: space-between; /* keeps prev on left, next on right */
+  margin-top: 40px;               /* extra breathing room above buttons */
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 40px;                /* adds spacing inside the container */
+}
+
+.collection-nav .nav-btn {
+  flex: 0 0 auto;                 /* prevents buttons from stretching */
+  min-width: 180px;               /* ensures consistent button width */
+  text-align: center;             /* centers text inside button */
 }
 
 .nav-btn {
