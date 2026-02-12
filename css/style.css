@@ -510,3 +510,72 @@ footer {
   background-color: #002147;
   color: #FFD700;
 }
+
+/*photo gallery collection */
+/* Photo Collection Section */
+.photo-collection {
+  padding: 40px;
+  text-align: center;
+}
+
+.photo-collection .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.photo-collection figure {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.photo-collection img {
+  width: 100%;
+  max-width: 250px;   /* keeps images neat */
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.photo-collection img:hover {
+  transform: scale(1.05);
+}
+
+.photo-collection figcaption {
+  margin-top: 8px;
+  color: #002147;
+  font-weight: bold;
+}
+
+/* Navigation buttons */
+.collection-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-btn {
+  background-color: #FFD700; /* gold */
+  color: #002147;            /* deep blue text */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 2px solid #FFD700;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #002147;
+  color: #FFD700;
+}

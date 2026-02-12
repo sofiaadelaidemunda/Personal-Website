@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sofia's Childhood Memories</title>
+  <title>Fiya's Childhood Memories</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body id="top">
 
@@ -28,34 +31,40 @@
 <section class="photo-collection">
   <div class="gallery-grid">
     <figure>
-      <a href="images/childhoodphoto1.jpg">
+      <a href="images/childhoodphoto1.jpg" data-lightbox="childhood" data-title="Recognition Day">
         <img src="images/childhoodphoto1.jpg" alt="Recognition Day">
       </a>
       <figcaption>Smiling and getting ready for recognition day in elementary</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto2.jpg">
+      <a href="images/childhoodphoto2.jpg" data-lightbox="childhood" data-title="Zoo Field Trip">
         <img src="images/childhoodphoto2.jpg" alt="Zoo Field Trip">
       </a>
       <figcaption>Field trip at a zoo</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto3.jpg">
+      <a href="images/childhoodphoto3.jpg" data-lightbox="childhood" data-title="Birthday Celebration">
         <img src="images/childhoodphoto3.jpg" alt="Birthday Celebration">
       </a>
       <figcaption>Birthday celebration at Jollibee</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto4.jpg">
+      <a href="images/childhoodphoto4.jpg" data-lightbox="childhood" data-title="Halloween Trick or Treat">
         <img src="images/childhoodphoto4.jpg" alt="Halloween Trick or Treat">
       </a>
       <figcaption>Halloween Trick or Treat in the neighbourhood</figcaption>
     </figure>
     <figure>
-      <a href="images/childhoodphoto5.jpg">
+      <a href="images/childhoodphoto5.jpg" data-lightbox="childhood" data-title="Museum Field Trip">
         <img src="images/childhoodphoto5.jpg" alt="Museum Field Trip">
       </a>
       <figcaption>Field trip at a museum with 3D art illusion</figcaption>
+    </figure>
+    <figure>
+      <a href="images/childhood2.jpg" data-lightbox="childhood" data-title="Little Sofia">
+        <img src="images/childhood2.jpg" alt="Little Sofia">
+      </a>
+      <figcaption>Little Sofia</figcaption>
     </figure>
   </div>
 
@@ -74,6 +83,9 @@
   <i class="fas fa-heart"></i>
   <span>Go to Top</span>
 </a>
+
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 </body>
 </html>
