@@ -97,14 +97,30 @@ body {
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
-.go-top {
-  display: inline-block;
-  margin-top: 15px;
-  color: #FFD700;
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #FFD700;
+  color: #002147;
+  border-radius: 30px; /* pill shape to fit icon + text */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
-.go-top:hover {
-  text-decoration: underline;
+.back-to-top i {
+  font-size: 20px;
+}
+
+.back-to-top:hover {
+  background-color: #002147;
+  color: #FFD700;
 }
