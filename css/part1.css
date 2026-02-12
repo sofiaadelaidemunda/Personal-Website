@@ -79,6 +79,7 @@ body {
 .parts-nav .part {
   display: inline-block;
   margin: 0 15px;
+  font-family: Tahoma, sans-serif;
   font-size: 16px;
   color: #FFD700;
   padding: 6px 12px;
@@ -88,6 +89,7 @@ body {
 .parts-nav .active {
   background-color: #FFD700;
   color: #002147;
+  font-family: Tahoma, sans-serif;
   font-weight: bold;
   border-radius: 4px;
   padding: 6px 12 px;
