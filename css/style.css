@@ -87,9 +87,22 @@ body {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
   padding: 50px 40px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;     /* align items at the top */
   gap: 30px;
+  flex-wrap: wrap;             /* allow wrapping on smaller screens */
   min-height: 100vh;
+}
+
+.about-img {
+  width: 150px;                /* fixed size like original */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  flex-shrink: 0;              /* prevent stretching */
+}
+
+.about-text {
+  flex: 1;                     /* text takes remaining space */
 }
 
 .about p {
