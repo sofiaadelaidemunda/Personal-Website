@@ -279,14 +279,16 @@ body {
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
 
-/* Footer (restored full-width deep blue bar) */
+/* Footer (full-width deep blue bar at bottom) */
 footer {
   background-color: #002147;
   color: #f0f0f0;
   text-align: center;
   padding: 20px;
-  width: 100%;              /* full horizontal coverage */
-  position: relative;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer-text {
