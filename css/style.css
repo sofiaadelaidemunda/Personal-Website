@@ -17,50 +17,17 @@ header, section {
   justify-content: center;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-}
-
-.logo {
-  font-family: Georgia, serif;
-  font-size: 26px;
-  color: #FFD700;
-  font-weight: bold;
-}
-
-.logo i {
-  color: #FFD700;
-  margin-right: 8px;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar a {
-  color: #FFD700;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.navbar a:hover {
-  color: #f0f0f0;
-}
-
 /* Hero */
 .hero {
-  background-color: #002147;
+  background-color: #002147;   /* deep blue */
   color: #FFD700;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  height: 100vh;               /* full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero h1 {
@@ -81,7 +48,7 @@ header, section {
 
 /* About */
 .about {
-  background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
+  background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%); /* cream + light */
   padding: 50px 40px;
   display: flex;
   align-items: center;
@@ -110,9 +77,24 @@ header, section {
   color: #FFD700;
 }
 
+/* Stories */
+.featured {
+  background-color: #f4f9f9; /* light neutral */
+  padding: 60px 20px;
+}
+
 /* Gallery */
 .gallery {
-  background-color: #fff8dc;
+  background-color: #002147; /* deep blue */
+  color: #FFD700;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%); /* cream blend */
+  color: #002147;
   padding: 60px 20px;
   text-align: center;
 }
