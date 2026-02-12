@@ -194,6 +194,26 @@ body {
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
 
+/* Gallery Section */
+.gallery {
+  background-color: #002147;   /* deep blue background */
+  color: #FFD700;              /* gold text */
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.gallery p {
+  font-size: 20px;
+  color: #f0f0f0;              /* light text for contrast */
+  font-style: italic;
+}
+
 /* Contact + Footer Section */
 .contact-footer {
   background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
@@ -201,18 +221,17 @@ body {
   padding: 60px 20px;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;   /* stack contact + footer vertically */
+  flex-direction: column;   /* stack contact info + footer */
   justify-content: center;
   align-items: center;
 }
 
-/* Contact Info - horizontal layout */
 .contact-info {
   display: flex;
   flex-direction: row;      /* horizontal side-by-side */
   justify-content: center;
-  align-items: center;
-  gap: 40px;                /* spacing between items */
+  align-items: flex-start;
+  gap: 50px;                /* spacing between items */
   margin-bottom: 40px;
 }
 
@@ -240,7 +259,6 @@ body {
   color: #002147;
 }
 
-/* Footer inside contact-footer */
 .contact-footer footer {
   background-color: #002147;
   color: #f0f0f0;
@@ -305,5 +323,11 @@ body {
   .card {
     width: 90%;
     max-width: 400px;
+  }
+
+  .contact-info {
+    flex-direction: column;   /* stack vertically on mobile */
+    align-items: center;
+    gap: 15px;
   }
 }
