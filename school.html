@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiya's School Memories</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo"><i class="fas fa-heart"></i> Fiya</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="childhood.html">Childhood</a>
+      <a href="family.html">Family</a>
+      <a href="performances.html">Performances</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <h1>School Memories</h1>
+    <h3>Snapshots from my school days</h3>
+  </div>
+</header>
+
+<section class="photo-collection">
+  <div class="gallery-grid">
+    <figure>
+      <img src="images/school1.jpg" alt="Classroom Activity"
+           onclick="openModal('images/school1.jpg','Classroom Activity')">
+      <figcaption>Fun classroom activity with classmates</figcaption>
+    </figure>
+    <figure>
+      <img src="images/school2.jpg" alt="Sports Event"
+           onclick="openModal('images/school2.jpg','Sports Event')">
+      <figcaption>Sports event at school grounds</figcaption>
+    </figure>
+    <figure>
+      <img src="images/school3.jpg" alt="Science Fair"
+           onclick="openModal('images/school3.jpg','Science Fair')">
+      <figcaption>Presenting at the science fair</figcaption>
+    </figure>
+    <figure>
+      <img src="images/school4.jpg" alt="Graduation Day"
+           onclick="openModal('images/school4.jpg','Graduation Day')">
+      <figcaption>Graduation day with friends</figcaption>
+    </figure>
+    <figure>
+      <img src="images/school5.jpg" alt="Group Project"
+           onclick="openModal('images/school5.jpg','Group Project')">
+      <figcaption>Working on a group project</figcaption>
+    </figure>
+    <figure>
+      <img src="images/school6.jpg" alt="Another School Memory"
+           onclick="openModal('images/school6.jpg','Another School Memory')">
+      <figcaption>Another cherished school memory</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Navigation buttons at the bottom -->
+<div class="collection-nav">
+  <a href="family.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Previous Collection</a>
+  <a href="performances.html" class="nav-btn next">Next Collection <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<footer>
+  <p class="footer-text">© 2026 Sofia Adelaide Munda. All Rights Reserved.</p>
+</footer>
+
+<a href="#top" class="back-to-top">
+  <i class="fas fa-heart"></i>
+  <span>Go to Top</span>
+</a>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <img id="modalImg" class="modal-content">
+  <div id="caption"></div>
+  <button class="back-btn" onclick="closeModal()">← Back to Gallery</button>
+</div>
+
+<script>
+function openModal(src, caption) {
+  const modal = document.getElementById("imageModal");
+  document.getElementById("modalImg").src = src;
+  document.getElementById("caption").innerHTML = caption;
+  modal.style.display = "flex"; // show overlay
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none"; // hide overlay
+}
+
+// Optional: allow ESC key to close modal
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

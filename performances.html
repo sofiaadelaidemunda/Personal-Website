@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiya's Performances</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo"><i class="fas fa-heart"></i> Fiya</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="childhood.html">Childhood</a>
+      <a href="family.html">Family</a>
+      <a href="school.html">School Days</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <h1>Performances</h1>
+    <h3>Snapshots from my stage and dance life</h3>
+  </div>
+</header>
+
+<section class="photo-collection">
+  <div class="gallery-grid">
+    <figure>
+      <img src="images/performance1.jpg" alt="Dance Recital"
+           onclick="openModal('images/performance1.jpg','Dance Recital')">
+      <figcaption>Dance recital at the community center</figcaption>
+    </figure>
+    <figure>
+      <img src="images/performance2.jpg" alt="School Play"
+           onclick="openModal('images/performance2.jpg','School Play')">
+      <figcaption>Acting in the school play</figcaption>
+    </figure>
+    <figure>
+      <img src="images/performance3.jpg" alt="Singing Contest"
+           onclick="openModal('images/performance3.jpg','Singing Contest')">
+      <figcaption>Joining a singing contest</figcaption>
+    </figure>
+    <figure>
+      <img src="images/performance4.jpg" alt="Talent Show"
+           onclick="openModal('images/performance4.jpg','Talent Show')">
+      <figcaption>Performing at the talent show</figcaption>
+    </figure>
+    <figure>
+      <img src="images/performance5.jpg" alt="Cultural Dance"
+           onclick="openModal('images/performance5.jpg','Cultural Dance')">
+      <figcaption>Cultural dance presentation</figcaption>
+    </figure>
+    <figure>
+      <img src="images/performance6.jpg" alt="Another Performance Memory"
+           onclick="openModal('images/performance6.jpg','Another Performance Memory')">
+      <figcaption>Another cherished performance memory</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Navigation button at the bottom -->
+<div class="collection-nav">
+  <a href="school.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Previous Collection</a>
+</div>
+
+<footer>
+  <p class="footer-text">© 2026 Sofia Adelaide Munda. All Rights Reserved.</p>
+</footer>
+
+<a href="#top" class="back-to-top">
+  <i class="fas fa-heart"></i>
+  <span>Go to Top</span>
+</a>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <img id="modalImg" class="modal-content">
+  <div id="caption"></div>
+  <button class="back-btn" onclick="closeModal()">← Back to Gallery</button>
+</div>
+
+<script>
+function openModal(src, caption) {
+  const modal = document.getElementById("imageModal");
+  document.getElementById("modalImg").src = src;
+  document.getElementById("caption").innerHTML = caption;
+  modal.style.display = "flex"; // show overlay
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none"; // hide overlay
+}
+
+// Optional: allow ESC key to close modal
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>

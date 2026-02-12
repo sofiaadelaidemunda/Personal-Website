@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiya's Family Memories</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo"><i class="fas fa-heart"></i> Fiya</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="childhood.html">Childhood</a>
+      <a href="school.html">School Days</a>
+      <a href="performances.html">Performances</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <h1>Family Memories</h1>
+    <h3>Snapshots with my loved ones</h3>
+  </div>
+</header>
+
+<section class="photo-collection">
+  <div class="gallery-grid">
+    <figure>
+      <img src="images/family1.jpg" alt="Family Gathering"
+           onclick="openModal('images/family1.jpg','Family Gathering')">
+      <figcaption>Family gathering during the holidays</figcaption>
+    </figure>
+    <figure>
+      <img src="images/family2.jpg" alt="Vacation"
+           onclick="openModal('images/family2.jpg','Vacation')">
+      <figcaption>Vacation trip with family</figcaption>
+    </figure>
+    <figure>
+      <img src="images/family3.jpg" alt="Celebration"
+           onclick="openModal('images/family3.jpg','Celebration')">
+      <figcaption>Celebrating a special occasion together</figcaption>
+    </figure>
+    <figure>
+      <img src="images/family4.jpg" alt="Weekend Outing"
+           onclick="openModal('images/family4.jpg','Weekend Outing')">
+      <figcaption>Weekend outing with siblings</figcaption>
+    </figure>
+    <figure>
+      <img src="images/family5.jpg" alt="Family Portrait"
+           onclick="openModal('images/family5.jpg','Family Portrait')">
+      <figcaption>Family portrait day</figcaption>
+    </figure>
+    <figure>
+      <img src="images/family6.jpg" alt="Another Family Memory"
+           onclick="openModal('images/family6.jpg','Another Family Memory')">
+      <figcaption>Another cherished family memory</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Navigation buttons at the bottom -->
+<div class="collection-nav">
+  <a href="childhood.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Previous Collection</a>
+  <a href="school.html" class="nav-btn next">Next Collection <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<footer>
+  <p class="footer-text">© 2026 Sofia Adelaide Munda. All Rights Reserved.</p>
+</footer>
+
+<a href="#top" class="back-to-top">
+  <i class="fas fa-heart"></i>
+  <span>Go to Top</span>
+</a>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <img id="modalImg" class="modal-content">
+  <div id="caption"></div>
+  <button class="back-btn" onclick="closeModal()">← Back to Gallery</button>
+</div>
+
+<script>
+function openModal(src, caption) {
+  const modal = document.getElementById("imageModal");
+  document.getElementById("modalImg").src = src;
+  document.getElementById("caption").innerHTML = caption;
+  modal.style.display = "flex"; // show overlay
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none"; // hide overlay
+}
+
+// Optional: allow ESC key to close modal
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+</html>
