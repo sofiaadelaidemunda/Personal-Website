@@ -535,7 +535,8 @@ footer {
   height: auto;
   border-radius: 6px;
   transition: transform 0.3s ease;
-  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .photo-collection img:hover {
@@ -581,21 +582,4 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 18px;
-}
-
-.back-btn {
-  display: block;
-  margin: 20px auto;
-  background: #FFD700;
-  color: #002147;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  max-width: 200px;
-}
-
-.back-btn:hover {
-  background: #002147;
-  color: #FFD700;
 }
