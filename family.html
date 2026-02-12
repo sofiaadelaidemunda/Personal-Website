@@ -81,14 +81,14 @@ function openModal(src, caption) {
   const modal = document.getElementById("imageModal");
   document.getElementById("modalImg").src = src;
   document.getElementById("caption").innerHTML = caption;
-  modal.style.display = "flex"; // show overlay
+  modal.style.display = "flex"; 
 }
 
 function closeModal() {
-  document.getElementById("imageModal").style.display = "none"; // hide overlay
+  document.getElementById("imageModal").style.display = "none"; 
 }
 
-// Optional: allow ESC key to close modal
+
 document.addEventListener("keydown", function(event) {
   if (event.key === "Escape") {
     closeModal();

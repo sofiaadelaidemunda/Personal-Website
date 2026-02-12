@@ -110,12 +110,12 @@ body {
   right: 20px;
   background-color: #FFD700;
   color: #002147;
-  border-radius: 30px; /* pill shape to fit icon + text */
+  border-radius: 30px; 
   padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* space between icon and text */
+  gap: 8px; 
   font-family: Tahoma, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -134,7 +134,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #002147;   /* deep blue */
+  background-color: #002147;   
   padding: 20px;
   margin-top: 40px;
   border-radius: 0 0 8px 8px;
@@ -142,22 +142,21 @@ footer {
   font-family: Tahoma, sans-serif;
 }
 
-/* Center copyright text */
+/* copyright text */
 footer .copyright {
-  color: #ffffff !important;   /* force white */
-  text-align: center;          /* center only this line */
+  color: #ffffff !important;   
+  text-align: center;          
   margin: 8px 0;
 }
 
-/* Left-align Back to Landing Page link */
 footer .back {
-  text-align: left;            /* left-align only this line */
+  text-align: left;            
   margin: 8px 0;
 }
 
 /* Back to Landing Page link styling */
 footer .back-link {
-  color: #FFD700;              /* gold */
+  color: #FFD700;              
   text-decoration: none;
   font-weight: bold;
   padding: 6px 12px;
@@ -175,27 +174,26 @@ footer .back-link:hover {
 /* Navigation between biography parts */
 .part-nav {
   display: flex;
-  justify-content: space-between; /* prev left, next right */
+  justify-content: space-between; 
   margin: 30px 50px;
 }
 
 /* Buttons */
 .part-nav a {
-  background-color: #FFD700;   /* gold background */
-  color: #002147;              /* deep blue text */
+  background-color: #FFD700;  
+  color: #002147;              
   font-family: Tahoma, sans-serif;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 6px;          /* rounded box */
+  border-radius: 6px;          
   border: 2px solid #FFD700;
   transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
   display: inline-block;
 }
 
-/* Hover effect */
 .part-nav a:hover {
   background-color: #002147;
   color: #FFD700;
-  transform: scale(1.05);      /* slight zoom on hover */
+  transform: scale(1.05);     
 }
