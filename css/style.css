@@ -485,3 +485,28 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.collection-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-btn {
+  background-color: #FFD700; /* gold */
+  color: #002147;            /* deep blue text */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 2px solid #FFD700;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #002147;
+  color: #FFD700;
+}
