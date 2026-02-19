@@ -633,19 +633,26 @@ footer {
   margin-bottom: 15px;
 }
 
-.media-card h3 {
-  color: #002147;
-  margin-bottom: 10px;
-}
-
 .media-card p {
   color: #333;
 }
 
-.media-card a {
+/* Explore Media Button */
+.media-btn {
+  display: inline-block;
+  background-color: #FFD700;   /* yellow background */
+  color: #002147;              /* dark blue text */
+  font-weight: bold;
   text-decoration: none;
-  color: inherit;
-  display: block; /* makes the whole card clickable */
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 2px solid #FFD700;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.media-btn:hover {
+  background-color: #002147;   /* dark blue background */
+  color: #FFD700;              /* yellow text */
 }
 
 .media-card:hover {
