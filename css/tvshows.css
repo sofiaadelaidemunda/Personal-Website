@@ -1,13 +1,13 @@
 .tvshows-section {
   background-color: #f9f9f9;
   padding: 60px 20px;
-  text-align: center;
 }
 
 .tvshows-section h2 {
   font-size: 28px;
   color: #002147;
   margin: 40px 0 20px;
+  text-align: center;
 }
 
 .tvshows-grid {
