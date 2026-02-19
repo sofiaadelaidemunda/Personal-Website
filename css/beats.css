@@ -42,6 +42,7 @@
 
 .beats-card p {
   color: #333;
+  text-align: center;
 }
 
 .beats-card iframe {
