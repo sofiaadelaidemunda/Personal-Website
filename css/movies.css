@@ -28,10 +28,11 @@
 }
 
 .movies-card img {
-  width: 100%;
-  max-width: 250px;
+  display: block;              /* treat as block element */
+  margin: 0 auto 15px;         /* center horizontally */
+  max-width: 250px;            /* cap width */
+  width: auto;                 /* prevent full stretch */
   border-radius: 6px;
-  margin-bottom: 15px;
 }
 
 .movies-card h3 {
