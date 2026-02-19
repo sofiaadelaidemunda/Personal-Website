@@ -1,0 +1,61 @@
+.beats-section {
+  background-color: #fff8dc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.beats-section h2 {
+  font-size: 28px;
+  color: #002147;
+  margin-bottom: 20px;
+}
+
+.beats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.beats-card {
+  background: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beats-card img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.beats-card h3 {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.beats-card p {
+  color: #333;
+}
+
+.beats-card iframe {
+  margin-top: 15px;
+  border: none;
+}
+
+.beats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #FFD700;
+}
+
+@media (max-width: 768px) {
+  .beats-grid {
+    grid-template-columns: 1fr;
+  }
+}
