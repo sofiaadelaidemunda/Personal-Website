@@ -12,7 +12,7 @@
 
 .beats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
@@ -29,10 +29,10 @@
 }
 
 .beats-card img {
-  display: block;          /* ensures it's treated as a block element */
-  margin: 0 auto 15px;     /* centers horizontally */
-  max-width: 250px;        /* limits size */
-  width: auto;             /* prevents stretching full width */
+display: block;          
+  margin: 0 auto 15px;     
+  max-width: 250px;        
+  width: auto;             
   border-radius: 6px;
 }
 

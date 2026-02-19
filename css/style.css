@@ -1214,7 +1214,6 @@ footer {
   font-weight: bold;
 }
 
-/* Modal overlay */
 .modal {
   display: none;               
   position: fixed;
@@ -1256,9 +1255,8 @@ footer {
   color: #FFD700;
 }
 
-/* Media Section */
 .media-section {
-  background-color: #f4f9f9; /* same as Featured Stories */
+  background-color: #f4f9f9; 
   padding: 60px 20px;
   text-align: center;
 }
@@ -1276,14 +1274,13 @@ footer {
   font-style: italic;
 }
 
-/* Media Card */
 .media-card {
   background-color: #fff;
   border: 2px solid #FFD700;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
   padding: 30px;
-  max-width: 600px;   /* wide rectangle */
+  max-width: 600px;   
   margin: 0 auto;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1299,11 +1296,10 @@ footer {
   color: #333;
 }
 
-/* Explore Media Button */
 .media-btn {
   display: inline-block;
-  background-color: #FFD700;   /* yellow background */
-  color: #002147;              /* dark blue text */
+  background-color: #FFD700;   
+  color: #002147;              
   font-weight: bold;
   text-decoration: none;
   padding: 10px 20px;
@@ -1313,8 +1309,8 @@ footer {
 }
 
 .media-btn:hover {
-  background-color: #002147;   /* dark blue background */
-  color: #FFD700;              /* yellow text */
+  background-color: #002147;   
+  color: #FFD700;              
 }
 
 .media-card:hover {
@@ -1322,7 +1318,6 @@ footer {
   box-shadow: 0 0 15px #FFD700;
 }
 
-/* Media Hub Icons */
 .card i {
   font-size: 36px;
   color: #FFD700;
