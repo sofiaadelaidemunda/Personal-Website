@@ -29,12 +29,10 @@
 }
 
 .beats-card img {
-  display: block;
-  width: 100%;
+  display: block;          /* makes it a block element */
+  margin: 0 auto 15px;     /* centers horizontally */
   max-width: 250px;
   border-radius: 6px;
-  margin: 0 auto 15px; /* auto left/right margins center it */
-  align-items: center;
 }
 
 .beats-card h3 {
