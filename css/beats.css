@@ -29,9 +29,10 @@
 }
 
 .beats-card img {
-  display: block;          /* makes it a block element */
+  display: block;          /* ensures it's treated as a block element */
   margin: 0 auto 15px;     /* centers horizontally */
-  max-width: 250px;
+  max-width: 250px;        /* limits size */
+  width: auto;             /* prevents stretching full width */
   border-radius: 6px;
 }
 
