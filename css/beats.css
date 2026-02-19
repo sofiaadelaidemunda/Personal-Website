@@ -42,11 +42,6 @@
 
 .beats-card p {
   color: #333;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: justify;   /* makes text edges align left & right */
-  margin: 0 auto;
-  max-width: 90%;        /* keeps text tidy inside the card */
 }
 
 .beats-card iframe {
