@@ -593,3 +593,62 @@ footer {
   background: #002147;
   color: #FFD700;
 }
+
+/* Media Section */
+.media-section {
+  background-color: #f4f9f9; /* same as Featured Stories */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.media-section h2 {
+  font-size: 28px;
+  color: #002147;
+  margin-bottom: 15px;
+}
+
+.media-section p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Media Card */
+.media-card {
+  background-color: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  padding: 30px;
+  max-width: 600px;   /* wide rectangle */
+  margin: 0 auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-card i {
+  font-size: 40px;
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.media-card h3 {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.media-card p {
+  color: #333;
+}
+
+.media-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* makes the whole card clickable */
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #FFD700;
+}
