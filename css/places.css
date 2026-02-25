@@ -1,7 +1,20 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  color: #333;
+}
+
+/* Collage section */
 .places-section {
   background-color: #f4f9f9;
   padding: 60px 20px;
   text-align: center;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .collage {
@@ -11,6 +24,7 @@
   margin-bottom: 30px;
 }
 
+/* Destination cards */
 .place-card {
   background: #fff;
   border: 2px solid #FFD700;
@@ -37,4 +51,12 @@
 .place-card p {
   color: #333;
   text-align: justify;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1000px) {
+  .collage {
+    max-width: 100%;
+    height: auto;
+  }
 }
