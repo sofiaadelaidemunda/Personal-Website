@@ -1,13 +1,14 @@
 .places-section {
-  background-color: #002147;
+  background-color: #f4f9f9;
   padding: 60px 20px;
   text-align: center;
-  color: #FFD700;
 }
 
 .collage {
-  width: 960px;   /* smaller display */
-  height: auto;   /* keeps aspect ratio */
+  max-width: 100%;
+  border: 3px solid #FFD700;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
 .place-card {
