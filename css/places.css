@@ -6,10 +6,8 @@
 }
 
 .collage {
-  max-width: 100%;
-  border: 3px solid #FFD700;
-  border-radius: 8px;
-  margin-bottom: 30px;
+  width: 960px;   /* smaller display */
+  height: auto;   /* keeps aspect ratio */
 }
 
 .place-card {
