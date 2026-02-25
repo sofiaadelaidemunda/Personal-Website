@@ -1,0 +1,41 @@
+.places-section {
+  background-color: #002147;
+  padding: 60px 20px;
+  text-align: center;
+  color: #FFD700;
+}
+
+.collage {
+  max-width: 100%;
+  border: 3px solid #FFD700;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.place-card {
+  background: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.place-card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.place-card h3 {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+.place-card p {
+  color: #333;
+  text-align: justify;
+}

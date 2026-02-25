@@ -5,13 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dream Places to Visit</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/places.css">
 </head>
 <body>
-    <h2>My Travel Bucket List</h2>
 
-    <img src="imagemap.jpg" usemap="#travelmap" alt="Travel Collage" width="800" height="500"
+<section id="dreamplaces" class="places-section">
+  <h2>Dream Places to Visit</h2>
+  <p>Click on the collage to explore each destination.</p>
 
-    <map name="travelmap">
-        <area shape="cicrle" coords="150,120,50" href="https://ik.imagekit.io/tvlk/blog/2025/01/Screenshot-2025-01-07-at-00.26.44.jpg?tr=q-70,c-at_max,w-1000,h-600" alt="South Korea">
-    </map>
+  <!-- Collage with image map -->
+  <img src="images/dreamplaces.jpg" alt="Dream Places Collage" usemap="#placesmap" class="collage">
+
+  <map name="placesmap">
+    <!-- Rectangle -->
+    <area target="_blank" alt="Seoul, South Korea" title="Seoul, South Korea" href="https://english.visitseoul.net/" coords="1,0,492,474" shape="rect">
+
+    <!-- Circle -->
+    <area shape="circle" coords="300,150,75" href="#tokyo" alt="Tokyo">
+
+    <!-- Polygon 1 -->
+    <area shape="poly" coords="400,50,500,100,450,200,380,150" href="#newyork" alt="New York">
+
+    <!-- Polygon 2 -->
+    <area shape="poly" coords="100,250,200,300,150,400,80,350" href="#rome" alt="Rome">
+
+    <!-- Polygon 3 -->
+    <area shape="poly" coords="250,250,350,280,320,380,220,360" href="#bali" alt="Bali">
+  </map>
+</section>
+
+<!-- Destination Sections -->
+<section id="paris" class="place-card">
+  <h3>Paris, France</h3>
+  <img src="images/paris.jpg" alt="Paris">
+  <p>I want to visit Paris to see the Eiffel Tower, explore the Louvre, and experience the romantic atmosphere of the city.</p>
+</section>
+
+<section id="tokyo" class="place-card">
+  <h3>Tokyo, Japan</h3>
+  <img src="images/tokyo.jpg" alt="Tokyo">
+  <p>Tokyo fascinates me with its mix of tradition and modernity — from ancient temples to neon-lit Shibuya Crossing.</p>
+</section>
+
+<!-- Repeat for New York, Rome, Bali -->
 </body>
+</html>
