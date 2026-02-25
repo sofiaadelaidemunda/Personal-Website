@@ -1329,11 +1329,6 @@ footer {
   background-color: #002147;   /* same as Photo Gallery */
   padding: 60px 20px;
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .dream-section h2 {
