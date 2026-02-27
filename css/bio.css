@@ -167,3 +167,40 @@ footer .back-link:hover {
   background-color: #FFD700;
   color: #002147;
 }
+
+.image-view {
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-container img {
+  max-width: 70%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.back-link {
+  color: #FFD700;              
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border: 2px solid #FFD700;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.back-link:hover {
+  background-color: #FFD700;
+  color: #002147;
+}

@@ -100,46 +100,65 @@ body {
 
 /* About Section */
 .about {
-  background: linear-gradient(90deg, #fff8dc 0%, #f4f9f9 100%);
-  padding: 60px 40px;
   display: flex;
-  align-items: center;
-  gap: 30px;
-  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.about-img {
-  width: 160px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
-  flex-shrink: 0;
-}
-
-.about-text {
+/* Left side (photo + text + button) */
+.about-left {
   flex: 1;
 }
 
 .about p {
+  text-align: justify;
+}
+
+.about-img {
+  width: 250px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 3px solid #FFD700;
+}
+
+.about-text h2 {
   color: #002147;
-  font-size: 18px;
-  line-height: 1.8;
+  margin-bottom: 15px;
 }
 
 .bio-btn {
   display: inline-block;
-  background-color: #FFD700;
-  color: #002147;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
   margin-top: 15px;
+  padding: 10px 20px;
+  background: #FFD700;
+  color: #002147;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
 .bio-btn:hover {
-  background-color: #002147;
-  color: #FFD700;
+  background: #e6c200;
+}
+
+/* Right side (video reel) */
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-video {
+  width: 100%;
+  max-width: 500px; /* make video larger */
+  border-radius: 8px;
+  border: 3px solid #FFD700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Featured Stories Section */
@@ -1375,4 +1394,46 @@ footer {
 .dream-card:hover {
   transform: translateY(-5px); /* lift on hover */
   box-shadow: 0 0 15px #FFD700;
+}
+
+/* Bucket List Section */
+.bucket-section {
+  background: #f4f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.bucket-section h2 {
+  color: #002147;
+  margin-bottom: 20px;
+}
+
+.bucket-card {
+  background: #fff;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.bucket-card i {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.bucket-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #FFD700;
+  color: #002147;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.bucket-btn:hover {
+  background: #e6c200;
 }
