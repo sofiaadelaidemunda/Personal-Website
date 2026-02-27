@@ -8,10 +8,10 @@ body {
 
 /* Collage section */
 .places-section {
-  background-color: #002147; /* deep navy */
-  padding: 60px 20px;
+  background-color: #002147;
+  padding: 120px 20px 60px;
   text-align: center;
-  color: #FFD700; /* gold text */
+  color: #FFD700; 
 }
 
 .collage {
@@ -27,10 +27,40 @@ body {
   border: 2px solid #FFD700;
   border-radius: 8px;
   padding: 20px;
-  margin: 30px auto;
+  margin: 60px auto; /* extra top space when vertically centering in small viewports */
   max-width: 800px;
-  text-align: left;
+  text-align: center; /* center content inside card */
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* center images inside cards */
+.place-card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Back button styled similarly to back-to-top */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FFD700;
+  color: #002147;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+.back-link:hover {
+  background-color: #002147;
+  color: #FFD700;
 }
 
 .place-card img {
