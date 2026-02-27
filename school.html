@@ -80,31 +80,5 @@
   <span>Go to Top</span>
 </a>
 
-<!-- Modal -->
-<div id="imageModal" class="modal">
-  <img id="modalImg" class="modal-content">
-  <div id="caption"></div>
-  <button class="back-btn" onclick="closeModal()">← Back to Gallery</button>
-</div>
-
-<script>
-function openModal(src, caption) {
-  const modal = document.getElementById("imageModal");
-  document.getElementById("modalImg").src = src;
-  document.getElementById("caption").innerHTML = caption;
-  modal.style.display = "flex"; 
-}
-
-function closeModal() {
-  document.getElementById("imageModal").style.display = "none"; 
-}
-
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    closeModal();
-  }
-});
-</script>
-
 </body>
 </html>

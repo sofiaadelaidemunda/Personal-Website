@@ -139,7 +139,6 @@ footer {
   font-family: Tahoma, sans-serif;
 }
 
-/* copyright text */
 footer .copyright {
   color: #ffffff !important;  
   text-align: center;          
@@ -151,7 +150,6 @@ footer .back {
   margin: 8px 0;
 }
 
-/* Back to Landing Page link styling */
 footer .back-link {
   color: #FFD700;              
   text-decoration: none;
@@ -183,8 +181,8 @@ footer .back-link:hover {
 }
 
 .image-container img {
-  max-width: 70%;
-  max-height: 80vh;
+  max-width: 60%;
+  max-height: 70vh;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }

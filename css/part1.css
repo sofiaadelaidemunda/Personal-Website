@@ -103,7 +103,6 @@ body {
   box-shadow: 0 4px 6px rgba(0,0,0,0.25);
 }
 
-/* Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 70px;
@@ -132,7 +131,6 @@ body {
   color: #FFD700;
 }
 
-/* Footer */
 footer {
   background-color: #002147;   
   padding: 20px;
@@ -142,7 +140,6 @@ footer {
   font-family: Tahoma, sans-serif;
 }
 
-/* copyright text */
 footer .copyright {
   color: #ffffff !important;   
   text-align: center;          
@@ -154,7 +151,6 @@ footer .back {
   margin: 8px 0;
 }
 
-/* Back to Landing Page link styling */
 footer .back-link {
   color: #FFD700;              
   text-decoration: none;
@@ -171,14 +167,12 @@ footer .back-link:hover {
   color: #002147;
 }
 
-/* Navigation between biography parts */
 .part-nav {
   display: flex;
   justify-content: space-between; 
   margin: 30px 50px;
 }
 
-/* Buttons */
 .part-nav a {
   background-color: #FFD700;  
   color: #002147;              
